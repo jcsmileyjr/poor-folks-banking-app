@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <link th:href="@{/index.css}" rel="stylesheet">
+</head>
+<body>
+<header>
+    <section>
+        <p><span>😁</span>Smiley's Poor Folks Bank</p>
+    </section>
+    <section>
+        <p>We poor and we love you more<span th:class="heart-emojii">❤</span></p>
+    </section>
+</header>
+<main>
+    <section class="work-area bank-options">
+        <h1>Show Balance</h1>
+        <p th:class="plainText" th:text="${balance}">balance</p>
+        <a th:href="@{/ShowOptions}">
+            <button class="button-options">
+                <p>Continue</p>
+            </button>
+        </a>
+    </section>
+</main>
+</body>
+</html>

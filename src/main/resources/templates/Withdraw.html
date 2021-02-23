@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <link th:href="@{/index.css}" rel="stylesheet">
+</head>
+<body>
+<header>
+    <section>
+        <p><span>😁</span>Smiley's Poor Folks Bank</p>
+    </section>
+    <section>
+        <p>We poor and we love you more<span th:class="heart-emojii">❤</span></p>
+    </section>
+</header>
+<main>
+    <section th:class="work-area">
+        <form method="POST" action="/WithDraw">
+            <h1 th:class="basic-input-h1">How much money do you want to withdraw?</h1>
+            <h2>(Remember we have bills to pay you monster.)</h2>
+            <section th:class="centerElements">
+                <input type="text" name="withdrawAmount" autocomplete="off" />
+                <button class="block-button basic-button">Submit</button>
+            </section>
+
+        </form>
+
+    </section>
+</main>
+</body>
+</html>
